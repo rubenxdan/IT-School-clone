@@ -1,6 +1,7 @@
 /* Top Section + copii */
 .top-section {
     position: relative;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: center;
