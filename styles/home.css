@@ -166,7 +166,7 @@ scroll-snap-type: mandatory;
 }
 
 .slides>div:target {
-    /*   transform: scale(0.8); */
+      transform: scale(0.8);
 }
 
 
