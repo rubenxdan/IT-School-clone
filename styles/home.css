@@ -425,3 +425,24 @@ main .subscribe .sub-container .input-wrapper p {
     background-color: rgb(0, 135, 104);
     color: white;
 }
+
+.forth-section .subtitle {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .forth-section .subtitle h2 {
+    min-width: 36.25rem;
+    font-size: var(--font-size-xl);
+    color: var(--text-color-dark);
+    font-weight: normal;
+}
+
+main .forth-section p {
+    font-size: var(--font-size-default);
+    color: var(--text-color-dark);
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
