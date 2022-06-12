@@ -440,7 +440,7 @@ main .forth-section .subtitle h2 {
     font-weight: normal;
 }
 
-main .forth-section p {
+main .forth-section h5 {
     font-size: var(--font-size-default);
     color: var(--text-color-muted);
     font-weight: normal;
