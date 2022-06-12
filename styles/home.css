@@ -442,7 +442,7 @@ main .forth-section .subtitle h2 {
 
 main .forth-section p {
     font-size: var(--font-size-default);
-    color: var(--text-color-dark);
+    color: var(--text-color-muted);
     font-weight: normal;
     overflow-wrap: break-word;
 }
