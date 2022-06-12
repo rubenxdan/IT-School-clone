@@ -430,7 +430,7 @@ main .subscribe .sub-container .input-wrapper p {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 main .forth-section .subtitle h2 {
