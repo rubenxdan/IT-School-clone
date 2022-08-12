@@ -276,6 +276,7 @@ main .about-locations .locations-photos .photo-3 {
   grid-area: three;
   border-radius: 1rem;
   object-fit: cover;
+  height: 100%;
 }
 
 main .about-locations .locations-photos .photo-4 {
@@ -385,5 +386,17 @@ main .about-locations .locations-photos .photo-4 {
 @media (max-width: 760px) {
   main .about-locations .locations-photos .photo-4 {
     display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos .photo-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos .photo-1 {
+    margin-bottom: -2rem;
   }
 }
