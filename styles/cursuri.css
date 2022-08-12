@@ -1,0 +1,860 @@
+/* Reseteaza CSS din browser */
+
+body .cursuri-layout {
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 76px 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+body .cursuri-layout .scrolltop {
+  position: fixed;
+  visibility: hidden;
+  bottom: 8rem;
+  right: 2rem;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.25s ease-in 0s;
+}
+
+/* Search + locations */
+
+main .hero {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+main .search {
+  margin: 48px auto;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  align-items: end;
+  gap: 12px;
+  border-bottom: 1px solid rgba(25, 30, 48, 0.1);
+  padding-bottom: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+main .search .pad:first-child {
+  width: 1200px;
+}
+
+main .hero .hero-bg {
+  position: absolute;
+  z-index: -1;
+  top: -76px;
+  bottom: 0px;
+  width: 150vw;
+  left: -50vw;
+  background-image: url("https://www.itschool.ro/_next/static/media/background.175e0d96.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .hero .hero-wrapper {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .hero .hero-wrapper h1 {
+  font-family: Asap, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+main .hero .hero-wrapper p {
+  font-family: Asap, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: white;
+}
+
+main .search .pad {
+  padding-bottom: 5px;
+}
+
+main .search .pad .tabs {
+  position: relative;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 45px;
+  padding: 3px 4px;
+  border-radius: 20px;
+  background-color: rgba(25, 30, 48, 0.1);
+  margin-top: 18px;
+}
+
+main .search .pad .tabs .typ-1 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  flex: 1 1 0%;
+  user-select: none;
+  cursor: default;
+  color: rgb(0, 135, 104);
+  border-radius: 20px;
+  background-color: white;
+}
+
+main .search .pad .tabs .typ-2 {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  flex: 1 1 0%;
+  color: rgba(25, 30, 48, 0.6);
+  user-select: none;
+}
+
+main .search .input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main .search .input-container label {
+  font-family: Asap, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgba(25, 30, 48, 0.6);
+  margin-bottom: 2.5px;
+}
+
+main .search .input-container .input-wrapper {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid rgba(25, 30, 48, 0.4);
+  border-radius: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+main .search .input-container .input-wrapper .input-icon-wrapper {
+  cursor: pointer;
+  margin-left: 12px;
+  margin-right: -6px;
+  margin-top: 3px;
+  color: rgba(25, 30, 48, 0.4);
+}
+
+main .search .input-container .input-wrapper .input {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 11px 16px;
+  color: rgb(25, 30, 48);
+}
+
+main .search .input-container .input-error {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgb(237, 67, 56);
+}
+
+main .search .town {
+  padding-bottom: 7px;
+}
+
+main .search .town .dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+main .search .town .dropdown .dropdown-label {
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgba(25, 30, 48, 0.6);
+  margin-bottom: 2.5px;
+}
+
+main .search .town .dropdown .dropdown-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 8px 12px 8px 16px;
+  border-radius: 20px;
+  cursor: not-allowed;
+  border: 1px solid rgba(25, 30, 48, 0.1);
+  background-color: rgba(25, 30, 48, 0.05);
+}
+
+main .search .town .dropdown .dropdown-container:first-child {
+  color: rgba(25, 30, 48, 0.1);
+}
+
+main .search .town .dropdown .dropdown-container svg {
+  color: rgba(25, 30, 48, 0.1);
+}
+
+main .search .town .dropdown .dropdown-container .selected {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(25, 30, 48);
+  user-select: none;
+}
+
+main .search .town .dropdown .dropdown-container .options {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0px;
+  min-width: 100%;
+  max-height: 320px;
+  overflow-y: auto;
+  width: fit-content;
+  padding: 16px;
+  opacity: 1;
+  border-radius: 16px;
+  background-color: rgb(253, 253, 253);
+  box-shadow: rgb(25 30 48 / 10%) 0px 2rem 4rem 0px;
+  display: none;
+}
+
+main .search .town .dropdown .dropdown-container .options .locations {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  gap: 2px;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgba(25, 30, 48, 0.4);
+}
+
+main .search .town .dropdown .dropdown-container .options .locations .locations-icon {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(25, 30, 48);
+  min-width: 220px;
+}
+
+/* Media Querry Search + Locations */
+
+@media (max-width: 760px) {
+  main .hero {
+    padding: 4.5rem 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .search {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  main .search {
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 24px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  main .search {
+    gap: 12px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  main .search .pad:first-child {
+    width: 100%;
+  }
+}
+
+/* Courses Cards */
+
+main .lists {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 48px;
+  padding-bottom: 96px;
+}
+
+main .lists .tag {
+  min-width: 280px;
+}
+
+main .lists .tag .container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
+  border-radius: 16px;
+  box-shadow: rgb(25 30 48 / 10%) 0px 20px 40px 0px;
+  background-color: rgb(253, 253, 253);
+  padding: 24px 0px;
+  position: relative;
+}
+
+main .lists .tag .container-card > * {
+  padding: 0px 24px;
+}
+
+main .lists .tag .container-card .graphic {
+  width: 100%;
+  padding: 0px;
+  align-self: flex-end;
+}
+
+main .lists .tag .container-card .spacer-1 {
+  width: 100%;
+  height: 24px;
+}
+
+main .lists .tag .container-card h3 {
+  margin-bottom: auto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgb(25, 30, 48);
+}
+
+main .lists .tag .container-card .spacer-2 {
+  width: 100%;
+  height: 4px;
+}
+
+main .lists .tag .container-card p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.33;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .lists .tag .container-card .spacer-3 {
+  width: 100%;
+  height: 17px;
+}
+
+main .lists .tag .container-card h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: left;
+  color: rgb(25, 30, 48);
+  margin: 10px;
+}
+
+main .lists .tag .container-card .action {
+  margin-bottom: 0;
+  align-self: flex-end;
+  cursor: pointer;
+  color: rgb(25, 30, 48);
+  transition: color 0.2s ease-in 0s;
+}
+
+main .lists .tag .container-card .action .button-container {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0px 32px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 24px;
+  min-width: 114px;
+  transition: all 0.25s ease-in 0s;
+  border: 1px solid rgb(0, 135, 104);
+  color: rgb(0, 135, 104);
+  background-color: white;
+}
+
+main .lists .tag .container-card .action .button-container p {
+  display: block;
+  margin: 0px;
+  padding: 8px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.25s ease-in 0s;
+  color: rgb(0, 135, 104);
+}
+
+main .lists .tag .container-card .action .button-container svg {
+  margin-left: 4px;
+  margin-right: -12px;
+}
+
+/* Media Querry Course Cards */
+
+@media (max-width: 760px) {
+  main .lists {
+    padding-top: 24px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .lists .tag {
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px) {
+  main .lists .tag {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  main .lists .tag .container-card {
+    max-width: 100%;
+  }
+}
+
+/* Sectiune ForWho / Bogdan  */
+
+main .forwho {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+main .forwho .content {
+  flex: 1 1 0%;
+}
+
+main .forwho .content p.title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgba(25, 30, 48, 0.4);
+  margin-bottom: 0.5rem;
+}
+
+main .forwho .content .spacer {
+  width: 100%;
+  height: 24px;
+}
+
+main .forwho .content h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin-bottom: 2rem;
+}
+
+main .forwho .content p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .forwho .image-wrapper {
+  flex: 1 1 0%;
+  display: block;
+}
+
+main .forwho .image-wrapper img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Media Querry - Forwho */
+
+@media (max-width: 960px) {
+  main .forwho {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  main .forwho {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  main .forwho .image-wrapper img {
+    margin-left: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  main .forwho .image-wrapper img {
+    background-size: auto 40px;
+    background-position: 100% 0%;
+  }
+}
+
+/* Sectiune Must-know - Despre cursurile online */
+
+main .mustknow {
+  padding: 96px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+main .mustknow .titlu {
+  width: 100%;
+}
+
+main .mustknow .titlu > * {
+  width: 80%;
+}
+
+main .mustknow .titlu p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgba(25, 30, 48, 0.4);
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+main .mustknow .titlu h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin-bottom: 24px;
+}
+
+main .mustknow .imagine {
+  flex: 1 1 0%;
+  display: block;
+  margin-right: 60px;
+}
+
+main .mustknow .imagine img {
+  display: block;
+  max-width: 100%;
+}
+
+main .mustknow .continut {
+  flex: 1 1 0%;
+}
+
+main .mustknow .continut:first-child {
+  max-width: 460px;
+  margin: auto;
+}
+
+main .mustknow .continut .tabs-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 40px;
+  padding: 3px 4px;
+  border-radius: 20px;
+  background-color: rgba(25, 30, 48, 0.1);
+  margin-bottom: 24px;
+}
+
+main .mustknow .continut .tabs-container p {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+  flex: 1 1 0%;
+  color: rgba(25, 30, 48, 0.6);
+  user-select: none;
+}
+
+main .mustknow .continut p {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .mustknow .continut .spacer {
+  width: 100%;
+  height: 24px;
+}
+
+main .mustknow .continut .paragrafe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .mustknow .continut .paragrafe .text {
+  display: flex;
+}
+
+main .mustknow .continut .paragrafe .text .container-shape {
+  margin-right: 24px;
+}
+
+main .mustknow .continut .paragrafe .text .container-shape .shape {
+  width: 32px;
+  height: 32px;
+  border-radius: 10% 45% 45% 10%;
+  background-color: rgba(25, 30, 48, 0.1);
+}
+
+main .mustknow .continut .paragrafe .text .container-text {
+  margin-right: 24px;
+}
+
+main .mustknow .continut .paragrafe .text .container-text h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgb(25, 30, 48);
+  margin-bottom: 8px;
+}
+
+/* Media querry Mustknow - Experiente practice, nu slide-uri */
+
+@media (max-width: 1200px) {
+  main .mustknow {
+    -webkit-box-align: revert;
+    align-items: revert;
+  }
+}
+
+@media (max-width: 960px) {
+  main .mustknow {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  main .mustknow {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  main .mustknow .imagine {
+    width: 80%;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Sectiune - Contacteaza-ne */
+
+main .help {
+  position: relative;
+  padding: 96px 0px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+main .help::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -50vw;
+  bottom: 0px;
+  width: 150vw;
+  background-image: url("https://www.itschool.ro/_next/static/media/background.c097b26b.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .help .help-content {
+  margin: auto;
+  max-width: 600px;
+}
+
+main .help .help-content .titlu {
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+}
+
+main .help .help-content h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+
+main .help .help-content .text {
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+
+main .help .help-content .buttons {
+  display: flex;
+  justify-content: center;
+  -webkit-box-pack: center;
+  gap: 24px;
+}
+
+main .help .help-content .buttons a {
+  display: block;
+  width: fit-content;
+  margin: 0;
+  background-color: white;
+  color: var(--bg-primary);
+  padding: 12px 24px;
+  border-radius: 20px;
+}
+
+/* Sectiune - Contacteaza-ne */
+
+main .subscribe {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+main .subscribe::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 1px;
+  background-color: rgba(25, 30, 48, 0.1);
+}
+
+main .subscribe:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -50vw;
+  width: 150vw;
+  z-index: -1;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main .subscribe div h2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+main .subscribe div p {
+  text-align: center;
+}
+
+main .subscribe .sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+main .subscribe .sub-container .input-wrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 2rem;
+  border: 1px solid rgba(25, 30, 48, 0.4);
+  display: flex;
+}
+
+main .subscribe .sub-container .input-wrapper input {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: var(--font-size-default);
+  padding: 0.5rem 6rem 0.5rem 1.5rem;
+  color: rgb(25, 30, 48);
+}
+
+main .subscribe .sub-container .input-wrapper p {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 135, 104);
+  line-height: 1.4;
+  color: white;
+}

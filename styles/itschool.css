@@ -1,0 +1,389 @@
+main {
+  grid-area: main / main / main / main;
+  padding-top: 0px;
+  width: 100%;
+  max-width: min(1240px, 100vw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main .about-hero {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 96px 0px;
+}
+
+main .about-hero .bg {
+  background-image: url("https://www.itschool.ro/_next/static/media/background.5c87565d.svg");
+  position: absolute;
+  z-index: -1;
+  top: -76px;
+  left: -20;
+  bottom: 0px;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+main .about-hero .wrap {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .about-hero .wrap h1 {
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: center;
+}
+
+main .about-school {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+main .about-school .wrap {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "about-text . about-image"
+    "results-image . about-image"
+    "results-image . results-text";
+}
+
+main .about-school .wrap .about-text {
+  grid-area: about-text;
+  max-width: 58rem;
+  margin-right: auto;
+}
+
+main .subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: var(--text-color-muted);
+  margin-bottom: 1rem;
+}
+
+main h2 {
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin-bottom: 1.5rem;
+}
+
+main .text {
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .about-school .wrap .about-image {
+  grid-area: about-image;
+  align-self: end;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+main .about-school .wrap .about-image img {
+  display: block;
+  max-width: 100%;
+}
+
+main .about-school .wrap .results-image {
+  grid-area: results-image;
+  max-width: 580px;
+  margin-right: auto;
+}
+
+main .about-school .wrap .results-image img {
+  display: block;
+  width: 100%;
+}
+
+main .about-school .wrap .results-text {
+  grid-area: results-text;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+main .about-trainers {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+main .about-trainers .titles {
+  display: flex;
+  gap: 48px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+main .about-trainers .titles .titles-wrapper {
+  min-width: 50%;
+}
+
+main #spatiu {
+  margin-top: 2.5rem;
+}
+
+main .about-trainers .photos {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 96px 0px 48px;
+}
+
+main .about-trainers .photos .large {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767px) {
+  main .about-trainers .photos .large {
+    display: none;
+  }
+}
+
+main .about-trainers .photos .mobile {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  main .about-trainers .photos .mobile {
+    display: none;
+  }
+}
+
+main .about-trainers .enroll {
+  padding-top: 48px;
+  border-top: 1px solid rgba(25, 30, 48, 0.1);
+}
+
+main .about-trainers .enroll .enroll-wrap {
+  margin: auto;
+  max-width: 580px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .about-trainers .enroll .enroll-wrap h2 {
+  line-height: 1.22;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main .about-trainers .background {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: -50vw;
+  bottom: 0px;
+  width: 150vw;
+  background-image: url("https://www.itschool.ro/_next/static/media/background.f010c851.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+main .about-trainers .enroll .enroll-wrap a {
+  margin-top: 3rem;
+}
+
+main .about-trainers .enroll .enroll-wrap a .button-success {
+  padding: 0rem 2rem;
+}
+
+main .about-trainers .enroll .enroll-wrap a .button-success p {
+  font-size: 1rem;
+  padding: 1rem 0rem;
+}
+
+main .about-locations {
+  position: relative;
+  width: 100%;
+  padding: 96px 0px;
+}
+
+main .about-locations .locations-photos {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "locations locations locations map map map"
+    "one one two two three three"
+    "four four four four three three";
+}
+
+main .about-locations .locations-photos .loc-titles {
+  grid-area: locations;
+  max-width: 580px;
+}
+
+main .about-locations .locations-photos .loc-map {
+  grid-area: map;
+  display: flex;
+  margin-bottom: 3rem;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+main .about-locations img {
+  display: block;
+  max-width: 100%;
+}
+
+main .about-locations .locations-photos .photo-1 {
+  grid-area: one;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+main .about-locations .locations-photos .photo-2 {
+  grid-area: two;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+main .about-locations .locations-photos .photo-3 {
+  grid-area: three;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+main .about-locations .locations-photos .photo-4 {
+  grid-area: four;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  main .about-hero {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-school {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .about-school .wrap {
+    grid-template-areas:
+      "about-text"
+      "results-image"
+      "results-text";
+  }
+}
+
+@media (max-width: 960px) {
+  main .about-school .wrap .about-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .about-school .wrap .about-image {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  main .about-school .wrap .results-text {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-trainers {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-trainers .titles {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  main #spatiu {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  main .about-locations .locations-photos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "locations map"
+      "one three"
+      "two three"
+      "four four";
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "locations"
+      "one"
+      "three"
+      "two";
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos .loc-titles {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos .loc-map {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  main .about-locations .locations-photos .photo-4 {
+    display: none;
+  }
+}

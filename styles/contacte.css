@@ -1,30 +1,525 @@
-/* Top Section + copii */
-.top-section {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
+/* Contacte */
+
+main {
+  grid-area: main / main / main / main;
+  padding-top: 0px;
+  width: 100%;
+  max-width: min(1240px, 100vw);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main .hero {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 96px 0px;
+}
+
+main .hero .hero-bg {
+  position: absolute;
+  z-index: -1;
+  top: -76px;
+  left: -20;
+  bottom: 0px;
+  width: 100vw;
+  background-image: url("https://www.itschool.ro/_next/static/media/background.d5722ffa.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+main .hero .hero-bg .hero-wrapper {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .hero .hero-wrapper h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+
+/* Sectiune Formular */
+
+main .form {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+main .form .form-sc {
+  position: relative;
+  display: flex;
+  border-radius: 16px;
+  box-shadow: rgb(25 30 48 / 10%) 0px 30px 60px 0px;
+  background-color: rgb(253, 253, 253);
+  margin-inline: auto;
+  margin-top: -80px;
+}
+
+main .form .form-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+main .form .form-info h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgb(25, 30, 48);
+  margin: 0px;
+}
+
+main .form .form-info .spacer {
+  width: 100%;
+  height: 32px;
+}
+
+main .form .form-info .typ-body {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .form .form-info .typ-body .link-ct {
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-bottom: 1px;
+  font-size: 16px;
+  color: rgb(0, 135, 104);
+  transition: all 0.25s ease-in 0s;
+}
+
+main .form .form-info .typ-body .link-ct .typo-aici {
+  display: block;
+  text-decoration: none;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: rgb(0, 135, 104);
+}
+
+main .form .form-info .contact-info {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+main .form .form-info .contact-info img {
+  display: block;
+  max-width: 100%;
+}
+
+main .form .form-info .contact-info h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin-bottom: 10px;
+}
+
+main .form .form-sc .form-inputs {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px;
+}
+
+main .form .form-sc .form-inputs .loading {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease 0s;
+  inset: 0px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+main .form .form-sc .form-inputs .loading .spinner {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+main .form .form-sc .form-inputs .loading .spinner .spinner-ring {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+main .form .form-sc .form-inputs .loading .spinner .spinner-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  margin: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 50%;
+  animation: 1.2s cubic-bezier(0.5, 0, 0.5, 1) 0s infinite normal none running spin;
+  border-color: rgba(25, 30, 48, 0.8) transparent transparent;
+}
+
+main .form .form-sc .form-inputs .loading .spinner .spinner-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+main .form .form-sc .form-inputs .loading .spinner .spinner-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+main .form .form-sc .form-inputs .loading .spinner .spinner-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+main .form .form-sc .form-inputs .course-reg {
+  display: flex;
+  align-items: flex-start;
+  height: 76px;
+  gap: 24px;
+}
+
+main .form .form-sc .form-inputs .course-reg .input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+main .form .form-sc .form-inputs .course-reg .input-container .input-label {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgba(25, 30, 48, 0.6);
+  margin-bottom: 2.5px;
+}
+
+main .form .form-sc .form-inputs .course-reg .input-container .input-wrapper {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid rgba(25, 30, 48, 0.4);
+  border-radius: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+main .form .form-sc .form-inputs .course-reg .input-container .input-wrapper .input-sc {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 11px 16px;
+  color: rgb(25, 30, 48);
+}
+
+main .form .form-sc .form-inputs .course-reg .textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main .form .form-sc .form-inputs .course-reg .textarea .textarea-label {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: rgba(25, 30, 48, 0.6);
+  margin-bottom: 2.5px;
+}
+
+main .form .form-sc .form-inputs .course-reg .textarea .textarea-wrapper {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 1px solid rgba(25, 30, 48, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main .form .form-sc .form-inputs .course-reg .textarea .textarea-wrapper .text-area {
+  width: 100%;
+  min-height: 96px;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 11px 16px;
+  color: rgb(25, 30, 48);
+}
+
+main .form .form-sc .form-inputs .captcha-wrapper {
+  margin-top: 48px;
+}
+
+main .form .form-sc .form-inputs .captcha-wrapper .captcha {
+  margin-bottom: 4px;
+}
+
+main .form .form-sc .form-inputs .agreement {
+  display: flex;
+  gap: 4px;
+}
+
+main .form .form-sc .form-inputs .agreement .checkbox {
+  cursor: pointer;
+  width: initial;
+  display: flex;
+  gap: 2px;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(0, 135, 104);
+}
+
+main .form .form-sc .form-inputs .agreement .checkbox .checkbox-label {
+  cursor: pointer;
+  font-family: Asap, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: rgb(25, 30, 48);
+}
+
+main .form .form-sc .form-inputs .agreement .typo-agreement {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+  width: 100%;
+  cursor: pointer;
+}
+
+main .form .form-sc .form-inputs .agreement .typo-agreement .links-ct {
+  cursor: pointer;
+  text-decoration: none;
+  width: fit-content;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+  font-size: 16px;
+  color: rgb(0, 135, 104);
+  transition: all 0.25s ease-in 0s;
+}
+
+main .form .form-sc .form-inputs .agreement .typo-agreement .links-ct .linkstyle-ct {
+  display: block;
+  text-decoration: none;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: inherit;
+}
+
+main .form .form-sc .form-inputs .submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+main .form .form-sc .form-inputs .submit .buttons-ct {
+  cursor: pointer;
+  width: 50%;
+  padding: 0px 48px;
+  align-items: center;
+  border-radius: 22px;
+  min-width: 114px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 135, 104);
+}
+
+main .form .form-sc .form-inputs .submit .buttons-ct p {
+  padding: 12px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+}
+
+main .form .form-sc .form-inputs .submit .buttons-ct:hover {
+  background-color: var(--hover-color);
+  transition: all 0.5s ease 0s;
+}
+
+main .form .form-sc .form-inputs::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  right: 0px;
+  top: 48px;
+  bottom: 48px;
+  border-right: 1px solid rgba(25, 30, 48, 0.1);
+}
+
+/* Sectiune Harta si locatii */
+
+main .adress {
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 96px;
+}
+
+main .adress .map {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+main .adress .adress-title {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+main .adress .adress-title p {
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgba(25, 30, 48, 0.4);
+  margin-bottom: 24px;
+}
+
+main .adress .adress-title h2 {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin: 0px;
+}
+main .adress .adress-location-ct {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+  max-width: 580px;
+}
+
+main .adress .adress-location-ct .adress-location {
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  gap: 8px;
+}
+
+main .adress .adress-location-ct .adress-location p {
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .adress .adress-location-ct .adress-location img {
+  max-width: 100%;
+}
+
+/* Media querry */
+
+@media (max-width: 760px) {
+  main .hero {
+    padding: 72px 0px;
+  }
+}
+
+/* Media - sectiune form */
+@media (max-width: 760px) {
+  main .form {
+    padding: 72px 0px;
+  }
+}
+
+@media (max-width: 960px) {
+  main .form .form-sc {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 960px) {
+  main .form .form-sc .form-inputs {
     display: flex;
-    justify-content: center;
+    padding: 32px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .form .form-sc .form-inputs .course-reg {
+    flex-direction: column;
     align-items: center;
-    padding: 9.6rem 0;
+    height: auto;
+  }
 }
 
-.bg-contacte {
-    position: absolute;
-    top: -7.6rem;
-    z-index: -1;
-    bottom: 0;
-    width: 100vw;
-    background-image: url('https://www.itschool.ro/_next/static/media/background.d5722ffa.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
+@media (max-width: 760px) {
+  main .form .form-sc .form-inputs .course-reg .input-container {
+    width: 100%;
+  }
 }
 
-/* Mid Section + copii */
-.mid-section {
-    border-radius: 1.6rem;
-    background-color: var(--text-color-light);
-    margin-top: -80px;
-    height: 20rem;
+@media (max-width: 760px) {
+  main .form .form-sc .form-inputs .captcha-wrapper {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  main .form .form-sc .form-inputs .course-reg .input-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .form .form-sc .form-info {
+    padding: 32px;
+    width: 100%;
+  }
 }

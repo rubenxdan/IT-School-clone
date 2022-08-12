@@ -1,448 +1,1589 @@
-/* Stilizare Sectiuni */
-
 /* Sectiunea 1 */
 main .hero-title {
-    height: 40.2rem;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 10rem;
+  height: 40.2rem;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10rem;
 }
 
-.image-content {
-    position: absolute;
-    background-color: var(--bg-dark);
-    background-image: url('https://www.itschool.ro/_next/static/media/background-big.6f4ab9bf.svg');
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: right bottom;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 43.75rem;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+main .hero-title .image-content {
+  position: absolute;
+  background-color: var(--bg-dark);
+  background-image: url("https://www.itschool.ro/_next/static/media/background-big.6f4ab9bf.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right bottom;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 43.75rem;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
 }
 
-.image-content .image-layout {
-    height: 43.75rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    max-width: min(1240px, 100vw - 20px);
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: var(--spacing-m);
-    padding-right: var(--spacing-m);
+main .hero-title .image-content .image-layout {
+  height: 43.75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-width: min(1240px, 100vw - 20px);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--spacing-m);
+  padding-right: var(--spacing-m);
 }
 
-.image-content .image-layout img {
-    height: 80%;
+main .hero-title .image-content .image-layout img {
+  height: 80%;
 }
 
-
-
-.hero-title .hero-message {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+main .hero-title .hero-message {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.hero-message h1 {
+main .hero-title .hero-message h1 {
+  margin-top: 1.5rem;
+  margin-bottom: var(--spacing-l);
+  font-weight: 500;
+  line-height: 1.21;
+}
+
+main .hero-title .hero-message .sponsori {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: var(--spacing-l);
+}
+
+main .hero-title .hero-message .sponsori img {
+  height: 36px;
+  width: auto;
+}
+
+main .hero-title .hero-message .button-group {
+  display: flex;
+  gap: var(--spacing-normal);
+}
+
+main .hero-title .hero-message .button-group a {
+  font-size: var(--font-size-m);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  transition: all ease-in-out 0.5s;
+}
+
+main .hero-title .hero-message .button-group a:hover {
+  opacity: 0.8;
+}
+
+/* Media Query - Sectiunea 1 */
+
+@media (max-width: 1200px) {
+  main .hero-title {
+    margin-top: 3.125rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title {
     margin-top: 1.5rem;
-    margin-bottom: var(--spacing-l);
+    height: 35.875rem;
+  }
 }
 
-.hero-message p {
-    color: white;
-    margin-bottom: 1.5rem;
+@media (max-width: 760px) {
+  main .hero-title {
+    margin-top: 2.25rem;
+    height: 35.875rem;
+  }
 }
 
-.hero-message .sponsori {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: var(--spacing-l);
+@media (max-width: 960px) {
+  main .hero-title .image-content {
+    background-image: url("https://www.itschool.ro/_next/static/media/background-small.4a96ddd3.svg");
+  }
 }
 
-.sponsori img {
-    height: 36px;
-    width: auto;
+@media (max-width: 760px) {
+  main .hero-title .image-content {
+    background-image: url("https://www.itschool.ro/_next/static/media/background-medium.daf3892a.svg");
+  }
 }
 
-.button-group {
-    display: flex;
-    gap: var(--spacing-normal);
+@media (max-width: 767px) {
+  main .hero-title .image-content {
+    background-image: url("https://www.itschool.ro/_next/static/media/background-small.4a96ddd3.svg");
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
-.button-group a {
-    font-size: var(--font-size-m);
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white;
-    transition: all ease-in-out 0.5s;
+@media (max-width: 960px) {
+  main .hero-title .hero-message {
+    padding: 1.5rem 2.25rem;
+    width: 100%;
+  }
 }
 
-.button-group a:hover {
-    opacity: 0.8;
+@media (max-width: 760px) {
+  main .hero-title .hero-message {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .hero-title .image-content .image-layout {
+    background-position: 66% 68%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title .image-content .image-layout {
+    background-position: 66% 68%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .hero-title .image-content .image-layout {
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-position: 25% 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  main .hero-title .image-content .image-layout {
+    background-position: 10% 75%;
+  }
+}
+
+@media (max-width: 1280px) {
+  main .hero-title .image-content .image-layout img {
+    height: 70%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title .image-content .image-layout img {
+    height: 65%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .hero-title .image-content .image-layout img {
+    height: 45%;
+  }
+}
+
+@media (max-width: 580px) {
+  main .hero-title .image-content .image-layout img {
+    height: 35%;
+  }
+}
+
+@media (max-width: 760px) {
+  main .hero-title .hero-message h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .hero-title .hero-message .sponsori {
+    gap: 1.25rem;
+    padding: 1.5rem 0rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title .hero-message .sponsori {
+    gap: 1.875rem;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title .hero-message .sponsori {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  main .hero-title .hero-message .button-group a {
+    display: none;
+  }
 }
 
 /* Sectiunea 2 */
 .second-section {
-    background-color: white;
-    padding: 96px 50px;
+  background-color: white;
+  padding: 96px 50px;
 }
 
 .second-section .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .second-section .title h2 {
-    text-align: center;
+  text-align: center;
+  font-weight: 500;
 }
-
 
 /* Carousel */
 
 .slider {
-    width: min(100vw, 1200px);
-    text-align: center;
-    overflow: hidden;
-    margin-top: 3rem;
-    background: transparent;
+  width: min(100vw, 1200px);
+  text-align: center;
+  overflow: hidden;
+  margin-top: 3rem;
+  background: transparent;
 }
 
 .slides {
-    display: flex;
+  display: flex;
 
-    height: 550px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  height: 550px;
+  /* overflow-x: auto; */
+  scroll-snap-type: x mandatory;
 
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 
-
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-
-    /*
+  /*
 scroll-snap-points-x: repeat(300px);
 scroll-snap-type: mandatory;
 */
 }
 
 .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
+  background: black;
+  border-radius: 10px;
 }
 
 .slides::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
-.slides>div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: min(100vw, 1200px);
-    margin-right: 50px;
-    border-radius: 10px;
-    background: transparent;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: min(100vw, 1200px);
+  margin-right: 50px;
+  border-radius: 10px;
+  background: transparent;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.slides>div:target {
-      transform: scale(0.8);
+.slides > div:target {
+  transform: scale(0.8);
 }
 
-
-.slider>a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 0.25rem;
-    background: var(--bg-primary);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.125rem;
-    margin: 0 0 0.5rem 0;
-    position: relative;
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 0.25rem;
+  background: var(--bg-primary);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.125rem;
+  margin: 0 0 0.5rem 0;
+  position: relative;
 }
 
-.slider>a:active {
-    top: 1px;
+.slider > a:active {
+  top: 1px;
 }
 
-.slider>a:focus {
-    background: #000;
+.slider > a:focus {
+  background: #000;
 }
 
 .course-set {
-    display: flex;
-    gap: var(--spacing-l);
-    padding: var(--spacing-m) 0;
+  display: flex;
+  gap: var(--spacing-l);
+  padding: var(--spacing-m) 0;
 }
 
 /* Stilizare Sectiuni Individuale */
 main .second-section {
-    position: relative;
-    z-index: -1;
-    margin-top: -11rem;
+  position: relative;
+  z-index: -1;
+  margin-top: -11rem;
 }
 
 main .second-section::before {
-    background-image: url('https://www.itschool.ro/_next/static/media/background.570f46a1.svg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    content: "";
-    display: block;
-    inset: 0px 0px 0px calc(-50vw + min(600px, 50vw - 3rem));
-    width: 100vw;
-    position: absolute;
-    z-index: -2;
-    background-size: auto;
+  background-image: url("https://www.itschool.ro/_next/static/media/background.570f46a1.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  content: "";
+  display: block;
+  inset: 0px 0px 0px calc(-50vw + min(600px, 50vw - 3rem));
+  width: 100vw;
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
 }
 
 main .second-section .call-action {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-left: 3rem;
-    padding: var(--spacing-m) 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-left: 3rem;
+  padding: var(--spacing-m) 0;
 }
 
 main .second-section .sponsor-title {
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-l);
-    margin-left: 3rem;
-    text-align: center;
-    width: 100%;
-    color: var(--text-color-muted);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-l);
+  margin-left: 3rem;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color-muted);
 }
 
 main .second-section .sponsor-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    -webkit-box-pack: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+  justify-content: center;
 }
 
 main .second-section .sponsor-list .sponsor-item {
-    flex-basis: 160px;
+  flex-basis: 160px;
+}
+
+/* Media Query Sectiunea 2 */
+
+@media (max-width: 760px) {
+  main .second-section {
+    padding: 96px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .second-section .slider {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 760px) {
+  main .second-section .slider {
+    left: -1.875rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  main .second-section .slider .slides {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .second-section .slider .slides {
+    max-width: 36.25rem;
+  }
+}
+/* Media provizoriu */
+@media (max-width: 600px) {
+  main .second-section .slider .slides {
+    max-width: 17.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .second-section {
+    margin-top: -4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .second-section {
+    margin-top: 2rem;
+  }
+}
+
+/* Sectiune Cursurile IT School - Third Section */
+
+main .third-section * {
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 main .third-section {
-    display: grid;
-    gap: 0.8rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "subtitle subtitle . ."
-        "title title . ."
-        "description description poster poster"
-        "programming programming poster poster"
-        "web web poster poster"
-        "graphics graphics devops devops"
-        "skillup skillup test others";
-    padding: 9.6rem 0px 0px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "subtitle subtitle . ."
+    "title title . ."
+    "description description poster poster"
+    "programming programming poster poster"
+    "web web poster poster"
+    "graphics graphics devops devops"
+    "skillup skillup test others";
+  padding: 6rem 0px 0px;
 }
 
 main .third-section .subtitle {
-    grid-area: subtitle / subtitle / subtitle / subtitle;
-    text-transform: uppercase;
-    color: rgba(25, 30, 48, 0.4);
-    padding-bottom: 1.6rem;
-    color: var(--text-color-muted)
+  grid-area: subtitle / subtitle / subtitle / subtitle;
+  text-transform: uppercase;
+  color: rgba(25, 30, 48, 0.4);
+  padding-bottom: 1rem;
+  color: var(--text-color-muted);
+  overflow-wrap: break-word;
 }
 
 main .third-section .title {
-    grid-area: title / title / title / title;
-    padding-bottom: 2.4rem;
+  grid-area: title / title / title / title;
+  padding-bottom: 1.5rem;
+  font-size: var(--font-size-xl);
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin: 0px;
 }
 
 main .third-section .description {
-    grid-area: description / description / description / description;
-    padding-bottom: 2.4rem;
-}
-
-.tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-}
-
-.tech-list .tech-icon {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    height: 64px;
-    width: 64px;
-    padding: var(--spacing-normal);
-    border-radius: 50%;
-    box-shadow: rgb(25 30 48 / 5%) 0px 10px 10px 0px;
-    background-color: white;
-}
-
-.tech-list .tech-icon img {
-    width: 100%;
-}
-
-main .third-section .programing {
-    grid-area: programming / programming / programming / programming;
-    padding-bottom: 3rem;
-}
-
-main .third-section .web {
-    grid-area: web / web / web / web;
-    padding-bottom: 3rem;
-}
-
-main .third-section .devops {
-    grid-area: devops / devops / devops / devops;
-    padding-bottom: 3rem;
-}
-
-main .third-section .test {
-    grid-area: test / test / test / test;
-    padding-bottom: 3rem;
-}
-
-main .third-section .graphics {
-    grid-area: graphics / graphics / graphics / graphics;
-    padding-bottom: 3rem;
-}
-
-main .third-section .skillup {
-    grid-area: skillup / skillup / skillup / skillup;
-    padding-bottom: 4.8rem;
-}
-
-main .third-section .others {
-    grid-area: others / others / others / others;
-    padding-bottom: 4.8rem;
+  grid-area: description / description / description / description;
+  padding-bottom: 3rem;
+  overflow-wrap: break-word;
 }
 
 main .third-section .poster {
-    grid-area: poster / poster / poster / poster;
-    padding-bottom: 4.8rem;
-    position: relative;
+  position: relative;
+  grid-area: poster / poster / poster / poster;
+  display: block;
 }
 
 main .third-section .poster img {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin-left: auto;
+  width: 100%;
+  margin-left: auto;
+  max-width: 31.25rem;
+  display: block;
 }
 
+main .third-section .programing {
+  grid-area: programming / programming / programming / programming;
+  padding-bottom: 3rem;
+}
+
+main .third-section .programing h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .programing .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .tech-list .tech-icon {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  box-shadow: rgb(25 30 48 / 5%) 0px 10px 10px 0px;
+  background-color: white;
+}
+
+main .third-section .tech-list .tech-icon img {
+  display: block;
+  max-width: 100%;
+}
+
+main .third-section .web {
+  grid-area: web / web / web / web;
+  padding-bottom: 3rem;
+}
+
+main .third-section .web h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .web .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .devops {
+  grid-area: devops / devops / devops / devops;
+  padding-bottom: 3rem;
+}
+
+main .third-section .devops h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .devops .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .test {
+  grid-area: test / test / test / test;
+  padding-bottom: 3rem;
+}
+
+main .third-section .test h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .test .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .graphics {
+  grid-area: graphics / graphics / graphics / graphics;
+  padding-bottom: 3rem;
+}
+
+main .third-section .graphics h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .graphics .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .skillup {
+  grid-area: skillup / skillup / skillup / skillup;
+  padding-bottom: 3rem;
+}
+
+main .third-section .skillup h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .skillup .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main .third-section .others {
+  grid-area: others / others / others / others;
+  padding-bottom: 3rem;
+}
+
+main .third-section .others h5 {
+  margin-bottom: var(--spacing-normal);
+  flex: 1 1 0%;
+  font-size: var(--font-size-m);
+}
+
+main .third-section .others .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Sectiunea Aboneaza-te la newsletter */
+
 main .subscribe {
-    position: relative;
-    margin: 0px;
-    width: 100%;
-    padding: 9.6rem 0px;
-    display: flex;
-    gap: 2.4rem;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  padding: 96px 0px;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 main .subscribe:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: -50vw;
-    width: 150vw;
-    z-index: -1;
-    display: block;
-    background-image: url('https://www.itschool.ro/images/greenish-bg.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -50vw;
+  width: 150vw;
+  z-index: -1;
+  display: block;
+  background-image: url("https://www.itschool.ro/images/greenish-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 main .subscribe div h2 {
-    text-align: center;
-    color: var(--text-color-white);
+  text-align: center;
+  color: var(--text-color-white);
+  font-weight: 500;
 }
 
 main .subscribe div p {
-    text-align: center;
-    color: var(--text-color-white);
+  text-align: center;
+  color: var(--text-color-white);
 }
 
 main .subscribe .sub-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
 main .subscribe .sub-container .input-wrapper {
-    position: relative;
-    background-color: white;
-    border-radius: 2rem;
-    border: 1px solid rgba(25, 30, 48, 0.4);
-    display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 2rem;
+  border: 1px solid rgba(25, 30, 48, 0.4);
+  display: flex;
 }
 
 main .subscribe .sub-container .input-wrapper input {
-    width: 30rem;
-    border: 0px;
-    outline: 0px;
-    background-color: transparent;
-    font-size: var(--font-size-default);
-    padding: 0.5rem 6rem 0.5rem 1.5rem;
-    color: rgb(25, 30, 48);
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: var(--font-size-default);
+  padding: 0.5rem 6rem 0.5rem 1.5rem;
+  color: rgb(25, 30, 48);
 }
 
 main .subscribe .sub-container .input-wrapper p {
-    cursor: pointer;
-    user-select: none;
-    position: absolute;
-    top: -1px;
-    right: -1px;
-    bottom: -1px;
-    padding: 0.4rem 1.2rem;
-    border-radius: 2rem;
-    background-color: rgb(0, 135, 104);
-    color: white;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  background-color: rgb(0, 135, 104);
+  color: white;
+  line-height: 1.35;
 }
 
-.forth-section .subtitle {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+/* Media Querry - sectiunea 3 - Cursurile IT School */
+
+@media (max-width: 960px) {
+  main .third-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "subtitle ."
+      "title title"
+      "description description"
+      "web poster"
+      "programming poster"
+      "graphics poster"
+      "devops skillup"
+      "test others";
+  }
+}
+
+@media (max-width: 760px) {
+  main .third-section {
+    padding: 4.5rem 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "subtitle subtitle"
+      "title title"
+      "description description"
+      "programming programming"
+      "web web"
+      "graphics graphics"
+      "devops devops"
+      "skillup skillup"
+      "test others"
+      "poster poster";
+  }
+}
+
+/* Sectiune 'Ecosistemul IT School' + carousel */
+
+main .forth-section {
+  display: block;
+  padding: 6rem 0px;
+  overflow: hidden;
+}
+
+main .forth-section .subtitle {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 main .forth-section .subtitle h2 {
-    min-width: 36.25rem;
-    font-size: var(--font-size-xl);
-    color: var(--text-color-dark);
-    font-weight: normal;
+  min-width: 36.25rem;
+  font-size: var(--font-size-xl);
+  color: var(--text-color-dark);
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+main .forth-section .subtitle p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
 }
 
 main .forth-section h5 {
-    font-size: var(--font-size-default);
-    color: var(--text-color-muted);
-    font-weight: normal;
-    overflow-wrap: break-word;
+  font-size: var(--font-size-default);
+  color: var(--text-color-muted);
+  font-weight: normal;
+  overflow-wrap: break-word;
+}
+
+main .forth-section .pages {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+main .forth-section .slider2 {
+  width: 100%;
+  overflow: visible;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+main .forth-section .slider2 .carousel {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: contents;
+  transition: transform 400ms ease-in-out 0s;
+  overflow: unset;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel {
+  flex: 1 1 auto;
+  position: relative;
+
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style {
+  min-height: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style p {
+  font-weight: 600;
+  font-size: var(--font-size-default);
+  margin-bottom: 1rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style .drawings {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 0.8px;
+  width: calc(100% - 24px);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style .drawings .circle {
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.375rem;
+  background-color: rgb(236, 177, 58);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style .drawings .circle::after {
+  content: "";
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: rgb(255, 255, 255);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .heading_style .drawings .arrow {
+  position: relative;
+  overflow: none;
+  width: 100%;
+  max-width: 3.625rem;
+  height: 1.125rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic {
+  cursor: grab;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: rgb(25 30 48 / 10%) 0px 20px 40px 0px;
+  background-color: rgb(253, 253, 253);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .icon {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  place-items: center;
+  width: 6.75rem;
+  height: 5.25rem;
+  padding: 18px 18px 18px 42px;
+  border-radius: 0px 42px 42px 0px;
+  background-color: rgb(236, 177, 58);
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .icon::after {
+  content: "";
+  margin-left: auto;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 0;
+  right: 1.5rem;
+  top: 1.125rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .icon .svg {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .icon .svg svg {
+  z-index: 1;
+  position: relative;
+  right: 0.375rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .text {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .text h4 {
+  font-size: var(--font-size-ml);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic .text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color-dark);
+  line-height: 1.22;
+}
+
+/* Sectiune 'Despre It School' - fifth section */
+
+main .fifth-section {
+  position: relative;
+  width: 100%;
+  padding: 6rem 0px;
+}
+
+main .fifth-section::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -50vw;
+  width: 150vw;
+  z-index: -1;
+  display: block;
+  background-color: rgba(202, 205, 193, 0.1);
+}
+
+main .fifth-section .wrapper * {
+  max-width: 100%;
+}
+
+main .fifth-section .wrapper {
+  width: 100%;
+  display: grid;
+  gap: var(--spacing-l);
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "img subtitle"
+    "img title"
+    "img details"
+    "video video"
+    "itemstitle itemstitle"
+    "items items"
+    "partenerstitle partenerstitle"
+    "parteners parteners"
+    "button button";
+}
+
+main .fifth-section .wrapper .subtitle {
+  grid-area: subtitle / subtitle / subtitle / subtitle;
+}
+
+main .fifth-section .wrapper .title {
+  grid-area: title / title / title / title;
+  margin-top: -2.25rem;
+  font-weight: normal;
+  line-height: 1.22;
+}
+
+main .fifth-section .wrapper .image-wrapper {
+  grid-area: img / img / img / img;
+  max-width: 36.5rem;
+  align-self: end;
+  margin-right: var(--spacing-l);
+}
+
+main .fifth-section .wrapper .image-wrapper img {
+  display: block;
+}
+
+main .fifth-section .wrapper .details {
+  grid-area: details / details / details / details;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main .fifth-section .wrapper .details h3 {
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+main .fifth-section .wrapper .details p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main .fifth-section .wrapper .details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main .fifth-section .wrapper .details a .button {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  min-width: 7.125rem;
+  transition: all 0.25s ease-in 0s;
+  border: 1px solid var(--bg-primary);
+  color: var(--bg-primary);
+  background-color: white;
+}
+
+main .fifth-section .wrapper .details a .button p {
+  display: block;
+  transition: all 0.25s ease-in 0s;
+  padding: 0.5rem 0px;
+  font-weight: normal;
+  font-size: var(--font-size-default);
+  color: var(--bg-primary);
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main .fifth-section .wrapper .video-wrapper {
+  grid-area: video / video / video / video;
+  width: 100%;
+  aspect-ratio: 15 / 9;
+  padding: 2rem;
+  background-color: rgba(202, 205, 193, 0.1);
+}
+
+main .fifth-section .wrapper .video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 26.5rem;
+}
+
+main .fifth-section .wrapper .typography-h3 {
+  grid-area: itemstitle / itemstitle / itemstitle / itemstitle;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+main .fifth-section .wrapper .items {
+  grid-area: items / items / items / items;
+  display: flex;
+  gap: 5rem;
+}
+
+main .fifth-section .wrapper .items .item {
+  display: flex;
+}
+
+main .fifth-section .wrapper .items .item .shape {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.25rem;
+  border-radius: 0px 50% 50% 0px;
+  background-color: rgba(25, 30, 48, 0.1);
+}
+
+main .fifth-section .wrapper .items .item .container .txt {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: rgb(25, 30, 48);
+}
+
+main .fifth-section .wrapper .items .item h4 {
+  margin-bottom: 1rem;
+  font-family: Asap, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+main .fifth-section .wrapper .typo-h5 {
+  grid-area: partenerstitle / partenerstitle / partenerstitle / partenerstitle;
+  margin-top: 3rem;
+  font-family: Asap, sans-serif;
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  line-height: 1.22;
+  text-align: center;
+  color: rgba(25, 30, 48, 0.4);
+  margin: 0px;
+}
+
+main .fifth-section .wrapper .partners {
+  grid-area: parteners / parteners / parteners / parteners;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 3.75rem;
+  margin: auto;
+  height: 2.5rem;
+}
+
+main .fifth-section .wrapper .button-wrapper {
+  grid-area: button / button / button / button;
+  width: 100%;
+  max-width: fit-content;
+  margin: auto;
+}
+
+main .fifth-section .wrapper .button-wrapper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main .fifth-section .wrapper .button-wrapper a .button-style {
+  cursor: pointer;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  min-width: 7.25rem;
+  color: white;
+  background-color: rgb(0, 135, 104);
+  transition: all 0.25s ease-in 0s;
+}
+
+main .fifth-section .wrapper .button-wrapper a .button-style p {
+  display: block;
+  margin: 0px;
+  color: white;
+  transition: all 0.25s ease-in 0s;
+  padding: 0.5rem 0px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+main .fifth-section .wrapper .button-wrapper a .button-style:hover {
+  background-color: var(--hover-color);
+  transition: ease-in 0.3s;
+}
+
+/* Media Query fifth section */
+
+@media (max-width: 1200px) {
+  main .fifth-section::before {
+    left: -2rem;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section {
+    padding: 4.5rem 0rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .fifth-section .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "subtitle"
+      "title"
+      "img"
+      "details"
+      "video"
+      "itemstitle"
+      "items"
+      "partenerstitle"
+      "parteners"
+      "button";
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "subtitle"
+      "title"
+      "img"
+      "details"
+      "video"
+      "itemstitle"
+      "items"
+      "partenerstitle"
+      "parteners"
+      "button";
+  }
+}
+
+@media (max-width: 767px) {
+  main .fifth-section .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper .image-wrapper {
+    min-height: 18.75rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .fifth-section .wrapper .video-wrapper {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper .video-wrapper {
+    padding: 0.5rem;
+    aspect-ratio: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  main .fifth-section .wrapper .items {
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper .items .item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  main .fifth-section .partners {
+    justify-content: space-around;
+    max-width: 18.75rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper .partners {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .fifth-section .wrapper .button-wrapper {
+    margin-top: 6rem;
+  }
+}
+
+/*  Recenzii - Sixth Section */
+
+main .sixth-section {
+  position: relative;
+  width: 100%;
+  padding: 6rem 0px;
+}
+
+main .sixth-section::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -50vw;
+  width: 150vw;
+  z-index: -1;
+  display: block;
+  background-color: rgb(19, 123, 188);
+}
+
+main .sixth-section .testimonials-wrapper {
+  display: grid;
+  grid-template-areas:
+    "titles icon comment"
+    "buttons icon comment"
+    "buttons . ."
+    ". . controls";
+}
+
+main .sixth-section .testimonials-wrapper .titles {
+  grid-area: titles / titles / titles / titles;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30rem;
+}
+
+main .sixth-section .testimonials-wrapper .titles .typo-p {
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+main .sixth-section .testimonials-wrapper .titles .typo-h2 {
+  font-size: var(--font-size-xl);
+  font-weight: normal;
+  line-height: 1.22;
+  color: white;
+  margin: 0px;
+}
+
+main .sixth-section .testimonials-wrapper .comment-icon {
+  grid-area: icon / icon / icon / icon;
+  color: white;
+  margin-left: 7.5rem;
+  margin-right: var(--spacing-m);
+}
+
+main .sixth-section .testimonials-wrapper .text {
+  grid-area: comment / comment / comment / comment;
+  color: white;
+  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main .sixth-section .testimonials-wrapper .buttons {
+  margin-top: 3rem;
+  grid-area: buttons / buttons / buttons / buttons;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 25rem;
+}
+
+main .sixth-section .testimonials-wrapper .buttons .stbutton {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  border-radius: 1.5rem;
+  border: 1px solid white;
+  background-color: white;
+  transition: opacity 0.25s ease-in 0s;
+}
+
+main .sixth-section .testimonials-wrapper .buttons .stbutton .typ-pp {
+  color: rgb(19, 123, 188);
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main .sixth-section .testimonials-wrapper .buttons .ndbutton {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+  border-radius: 1.5rem;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: opacity 0.25s ease-in 0s;
+}
+
+main .sixth-section .testimonials-wrapper .buttons .ndbutton .typ-p {
+  color: white;
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main .sixth-section .testimonials-wrapper .controls {
+  grid-area: controls / controls / controls / controls;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+main .sixth-section .testimonials-wrapper .controls svg {
+  margin-right: 0.5rem;
+}
+
+main .sixth-section .testimonials-wrapper .controls .typo-p {
+  font-size: var(--font-size-default);
+  font-weight: normal;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+main .sixth-section .testimonials-wrapper .controls .pages {
+  grid-column: 1 / span 2;
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+/* Media for Sixth Section */
+
+@media (max-width: 760px) {
+  main .sixth-section {
+    padding: 4.5rem 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .sixth-section::before {
+    left: -1.5rem;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 960px) {
+  main .sixth-section .testimonials-wrapper {
+    grid-template-areas:
+      "titles titles titles"
+      "icon comment comment"
+      ". controls buttons";
+  }
+}
+
+@media (max-width: 760px) {
+  main .sixth-section .testimonials-wrapper {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "titles titles"
+      "comment comment"
+      "icon controls"
+      "buttons buttons";
+  }
+}
+
+@media (max-width: 960px) {
+  main .sixth-section .testimonials-wrapper .titles {
+    max-width: unset;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .sixth-section .testimonials-wrapper .comment-icon {
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .sixth-section .testimonials-wrapper .comment-icon {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  main .sixth-section .testimonials-wrapper .text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .sixth-section .testimonials-wrapper .buttons {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  main .sixth-section .testimonials-wrapper .controls {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  main .sixth-section .testimonials-wrapper .controls {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Sectiunea 7 - Cele mai frecvente intrebari */
+
+main .seventh-section {
+  margin: auto;
+  max-width: 48.75rem;
+  width: 100%;
+  padding: 3rem 0px 6rem;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .seventh-section h2 {
+  font-family: Asap, sans-serif;
+  font-size: var(--font-size-xl);
+  font-weight: normal;
+  line-height: 1.22;
+  color: rgb(25, 30, 48);
+  margin: 0px;
+}
+main .seventh-section .grid-spacer {
+  width: 100%;
+  height: 3rem;
+}
+
+main .seventh-section .details {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgb(25 30 48 / 10%) 0px 20px 40px 0px;
+  background-color: rgb(253, 253, 253);
+}
+
+main .seventh-section .details .summary {
+  cursor: pointer;
+  z-index: 1;
+  padding: 1.5rem 0px;
+  display: flex;
+  gap: 0.625rem;
+}
+
+main .seventh-section .details .summary .typo-h4 {
+  flex: 1 1 0%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+main .seventh-section .details .answers {
+  margin-left: 1.75rem;
+  z-index: 0;
+  transition: all 0.4s ease-out 0s;
+  opacity: 1;
+  max-height: 12.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(25, 30, 48, 0.4);
+  line-height: 1.5;
+}
+
+/* Media Querry Sectiunea 7 */
+@media (max-width: 760px) {
+  main .seventh-section .details .answers {
+    max-height: 25rem;
+  }
 }
