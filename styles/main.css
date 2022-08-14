@@ -408,12 +408,12 @@ footer .copyright .terms a:hover {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  max-width: 20rem;
-  min-height: 480px;
-  border-radius: 1.6rem;
-  box-shadow: rgb(25 30 48 / 10%) 0px 2rem 4rem 0px;
+  max-width: 17.5rem;
+  min-height: 23rem;
+  border-radius: 1rem;
+  box-shadow: rgb(25 30 48 / 10%) 0px 1.25rem 2.5rem 0px;
   background-color: var(--text-color-light);
-  padding: 2.4rem 0;
+  padding: 1.5rem 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -427,10 +427,10 @@ footer .copyright .terms a:hover {
 }
 
 .card-container .status {
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: absolute;
-  top: 2.4rem;
-  right: 3.6rem;
+  top: 1.5rem;
+  right: 2rem;
   border-radius: 4px;
   padding: 2px 4px;
   color: rgb(0, 197, 105);
@@ -439,25 +439,27 @@ footer .copyright .terms a:hover {
 
 .card-container h3 {
   text-align: left;
-  padding: 0 2.4rem;
-  margin-top: 2rem;
+  padding: 0 1.5rem;
+  margin-top: 1.25rem;
+  font-weight: 500;
 }
 
 .card-container .sub-title {
   text-align: left;
   margin-top: 2rem;
-  padding: 0 2.4rem;
+  padding: 0 1.5rem;
 }
 
 .card-container h5 {
   text-align: left;
-  margin-top: 2rem;
-  padding: 0 2.4rem;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  font-weight: 500;
 }
 
 .card-container .go-to {
-  padding: 0 2.4rem;
-  margin-top: 3.1rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
   align-self: flex-end;
   cursor: pointer;
   color: rgb(25, 30, 48);
