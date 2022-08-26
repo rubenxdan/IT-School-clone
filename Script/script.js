@@ -19,12 +19,12 @@ document.addEventListener("scroll", function () {
 
 // Collapsing Text - Home - Ultima sectiune
 
-var collapse = document.getElementsByClassName("summary");
-var i;
+const collapse = document.getElementsByClassName("summary");
+let i;
 
 for (i = 0; i < collapse.length; i++) {
   collapse[i].addEventListener("click", function () {
-    var content = this.nextElementSibling;
+    const content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
