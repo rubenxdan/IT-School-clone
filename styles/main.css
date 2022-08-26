@@ -470,6 +470,7 @@ footer .copyright .terms a:hover {
   color: var(--bg-primary);
 }
 
+/* Scroll to top button */
 .scroll-to-top {
   position: fixed;
   visibility: visible;
@@ -488,4 +489,14 @@ footer .copyright .terms a:hover {
   align-items: center;
   background-color: var(--bg-primary);
   color: white;
+}
+
+/* Stuff  */
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
