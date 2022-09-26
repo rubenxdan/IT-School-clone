@@ -872,8 +872,6 @@ main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .hea
 }
 
 main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .container_card_mic {
-  cursor: grab;
-  user-select: none;
   display: flex;
   flex-direction: column;
   max-width: 25%;
