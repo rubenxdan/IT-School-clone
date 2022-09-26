@@ -491,12 +491,10 @@ footer .copyright .terms a:hover {
   color: white;
 }
 
-/* Stuff  */
-
-.hidden {
+#svg2 {
   display: none;
 }
 
-.show {
-  display: block;
+#svg4 {
+  display: none;
 }

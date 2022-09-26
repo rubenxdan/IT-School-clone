@@ -20,9 +20,8 @@ document.addEventListener("scroll", function () {
 // Collapsing Text - Home - Ultima sectiune
 
 const collapse = document.getElementsByClassName("summary");
-let i;
 
-for (i = 0; i < collapse.length; i++) {
+for (let i = 0; i < collapse.length; i++) {
   collapse[i].addEventListener("click", function () {
     const content = this.nextElementSibling;
     if (content.style.maxHeight) {
@@ -32,3 +31,25 @@ for (i = 0; i < collapse.length; i++) {
     }
   });
 }
+
+// const plusElement = document.querySelector("#svg1");
+// const minusElement = document.querySelector("#svg2");
+// const downwards = document.querySelector("#svg3");
+// const upwards = document.querySelector("#svg4");
+
+// function switchVisible() {
+//   if (minusElement.style.display === "none") {
+//     minusElement.style.display = "block";
+//     plusElement.style.display = "none";
+//   } else {
+//     minusElement.style.display = "none";
+//     plusElement.style.display = "block";
+//   }
+//   if (upwards.style.display === "none") {
+//     upwards.style.display = "block";
+//     downwards.style.display = "none";
+//   } else {
+//     upwards.style.display = "none";
+//     downwards.style.display = "block";
+//   }
+// }
