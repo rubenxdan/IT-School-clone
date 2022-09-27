@@ -288,6 +288,7 @@ scroll-snap-type: mandatory;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .slides > div:target {
@@ -399,6 +400,8 @@ main .second-section .sponsor-list .sponsor-item {
 @media (max-width: 1024px) {
   main .second-section .slider {
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -417,12 +420,6 @@ main .second-section .sponsor-list .sponsor-item {
 @media (max-width: 760px) {
   main .second-section .slider .slides {
     max-width: 36.25rem;
-  }
-}
-/* Media provizoriu */
-@media (max-width: 600px) {
-  main .second-section .slider .slides {
-    max-width: 17.5rem;
   }
 }
 
@@ -755,6 +752,7 @@ main .forth-section {
   display: block;
   padding: 6rem 0px;
   overflow: hidden;
+  margin-bottom: 0rem;
 }
 
 main .forth-section .subtitle {
@@ -797,7 +795,6 @@ main .forth-section .pages {
 main .forth-section .slider2 {
   width: 100%;
   overflow: visible;
-  padding-bottom: 5rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -955,6 +952,28 @@ main .forth-section .slider2 .carousel .lista_carousel .container_card_mare .con
   font-size: var(--font-size-default);
   color: var(--text-color-dark);
   line-height: 1.22;
+}
+
+/* Media Querry */
+
+@media (max-width: 1024px) {
+  main .forth-section .subtitle {
+    display: block;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 900px) {
+  main .forth-section .slider2 #cards-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  main .forth-section .slider2 #cards-wrapper .container_card_mic {
+    min-width: 80%;
+  }
 }
 
 /* Sectiune 'Despre It School' - fifth section */

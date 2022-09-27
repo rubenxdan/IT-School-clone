@@ -186,7 +186,7 @@ section {
 footer {
   grid-area: footer / footer / footer / footer;
   height: fit-content;
-  padding: 3rem 1.25px 1.5rem;
+  padding: 3rem 1.25rem 1.5rem;
   background-color: white;
   width: 100%;
   max-width: min(1240px, 100vw);
