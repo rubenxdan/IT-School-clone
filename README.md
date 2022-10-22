@@ -1,2 +1,2 @@
 # Html & Css project
-# Netlify link : https://snazzy-phoenix.netlify.app/
+# Netlify link : https://it-school-site-clone.netlify.app/
